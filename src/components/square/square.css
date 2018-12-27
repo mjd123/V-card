@@ -1,0 +1,29 @@
+
+
+.square-container{
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+
+    background: #00A3A6;
+
+    position: absolute;
+    top: -200px;
+    right: -50px;
+
+    animation: floating 30s forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+    overflow: hidden;
+    
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px) rotate(38deg); }
+    25%  { transform: translate(-15px,  0px) rotate(38deg); }
+    50%  { transform: translate(0px,  15px) rotate(38deg); }
+    75%  { transform: rotate(43deg);}
+    to   { transform: translate(0, -0px) rotate(38deg); }    
+}

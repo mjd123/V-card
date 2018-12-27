@@ -1,0 +1,26 @@
+.polygon {
+    -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+    width: 570px;
+    height: 500px;
+
+    background: #00A3A6;
+    position: absolute;
+
+    bottom: -150px;
+    right: -250px;
+
+    animation: floating-poly 50s forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+
+    overflow: hidden;
+}
+
+@keyframes floating-poly {
+    from { transform: translate(0,  0px); }
+    50%  { transform: translate(60px,  0px) rotate(20deg); }
+    to  { transform: translate(0px,  -30px); }
+}

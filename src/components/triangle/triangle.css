@@ -1,0 +1,30 @@
+.triangle {
+    
+    width: 0px;
+    height: 0px;
+
+    position: absolute;
+    left: -175px;
+    bottom: -200px;
+
+    border-style: solid;
+    border-width: 250px 0 250px 450px;
+    border-color: transparent transparent transparent #00A3A6;
+    
+    transform: rotate(-15deg);
+
+    animation: floating-triangle 30s forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+    overflow: hidden;
+  }
+
+  @keyframes floating-triangle {
+    from { transform: translate(0,  0px) rotate(-15deg); }
+    25%  { transform: translate(50px,  0px) rotate(-10deg); }
+    50%  { transform: translate(0px,  50px) rotate(-15deg); }
+    75%  { transform: rotate(-30deg);}
+    to   { transform: translate(0, -0px) rotate(-15deg); }    
+}
