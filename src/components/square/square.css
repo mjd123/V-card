@@ -27,3 +27,19 @@
     75%  { transform: rotate(43deg);}
     to   { transform: translate(0, -0px) rotate(38deg); }    
 }
+
+@media all and (max-width: 480px)
+ {
+    .square-container {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media all and (max-width: 720px) and (orientation: landscape) {
+
+    .square-container {
+        height: 300px;
+    }
+}
+

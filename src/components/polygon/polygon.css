@@ -24,3 +24,28 @@
     50%  { transform: translate(60px,  0px) rotate(20deg); }
     to  { transform: translate(0px,  -30px); }
 }
+
+@media all and (max-height: 650px)
+ {
+    .polygon {
+        width: 530px;
+        height: 450px;
+    }
+}
+
+@media all and (max-width: 480px){
+    .polygon {
+        width: 340px;
+        height: 340px;
+
+        bottom: -150px;
+        right: -150px;
+    }
+}
+
+@media all and (max-width: 720px) and (orientation: landscape) {
+    .polygon {
+        display: none;
+    }
+}
+

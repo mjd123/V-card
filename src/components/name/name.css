@@ -47,3 +47,16 @@ article .par {
     width: 35px;
     margin-right: 10px;
 }
+
+@media all and (max-width: 480px) {
+    article {
+        padding: 0  0 100px 50px;
+    }
+}
+
+@media all and (max-width: 720px) and (orientation: landscape) {
+    article {
+        padding: 50px  0 100px 50px;
+    }
+
+}
